@@ -35,7 +35,7 @@ const DiscoverScreen = () => {
       .get(
         `https://api.edamam.com/api/recipes/v2?type=public&q=${
           userRecipe || selectedRecipe
-        }&app_id=8e39c23a&app_key=%2005d61da110b66af90ee209ee131981c4%09`
+        }&app_id=app_id&app_key=app_key`
       )
       .then((response) => {
         // console.log(response.data.hits);
@@ -55,7 +55,7 @@ const DiscoverScreen = () => {
     setLoading(true);
     axios
       .get(
-        `https://api.edamam.com/api/recipes/v2?type=public&q=${userRecipe}&app_id=8e39c23a&app_key=%2005d61da110b66af90ee209ee131981c4%09`
+        `https://api.edamam.com/api/recipes/v2?type=public&q=${userRecipe}&app_id=add_id&app_key=app_key`
       )
       .then((response) => {
         // console.log(response.data.hits);
